@@ -31,6 +31,10 @@ p{
     font-size: 1.5em;
 }
 
+.center{
+    text-align: center;
+}
+
 /*navbar- override base styles from bootstrap*/
 a.navbar-brand, a.nav-item.nav-link.active, a.nav-item.nav-link{
     color:cadetblue!important;
@@ -62,9 +66,9 @@ a.navbar-brand, a.nav-item.nav-link.active, a.nav-item.nav-link{
      height:100vh;
 }
 
-.pm{
-     background-image: url('../images/oculus2.jpg');
-     min-height:100vh;
+.greta{
+    background-image: url('../images/GretaLaurelSmall.jpg');
+    height:675px;
 }
 
 .developer{
@@ -84,6 +88,15 @@ a.navbar-brand, a.nav-item.nav-link.active, a.nav-item.nav-link{
     width:auto;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.parallax2 {
+    max-width:650px;
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     position: relative;
     background-attachment: fixed;
@@ -111,10 +124,14 @@ div.carousel-inner img{
 
 /*Portfolio styles*/
 
+.portfolio {
+    padding-top:70px;
+}
+
 .portfolioImg{
     padding:20px;
     width:100%;
-    height:300px;
+    height:230px;
 }
 
 /*Portfolio Overlay*/
@@ -145,6 +162,15 @@ div.carousel-inner img{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+    width:90%;
+}
+
+.overlayText h2 {
+    font-size: 16px;
+}
+
+.overlayText p {
+    font-size: 12px;
 }
 
 /*Technologies*/
@@ -153,16 +179,40 @@ div.carousel-inner img{
     background-color: white;
 }
 
-.techicon {
+.techicon, .social {
     width:auto;
     height:150px;
     padding-top:30px;
     padding-bottom: 30px;
 }
 
-.center{
-    text-align: center;
+/*Contact*/
+
+.contact a{
+    text-decoration: none;
+    color: #2F1D1A;
 }
+
+.contact h2 {
+    padding-top: 70px;
+}
+
+.contact {
+    padding-bottom: 50px;
+}
+
+/*media queries tablet, desktop*/
+
+@media (min-width:451px) {
+
+    .greta{
+        background-image: url('../images/GretaLaurel.jpg');
+        height:650px!important;
+        width:100%!important;
+        padding:45% 0 0;
+    }
+}
+
 
 @media (min-width: 540px) {
     header h1{
@@ -196,6 +246,26 @@ div.carousel-inner img{
 
     .portfolioImg{
     height:350px;
+    }
+
+    /*Portfolio Overlay*/
+
+    .overlayText h2 {
+        font-size: 1.5rem;
+    }
+
+    .overlayText p{
+        font-size: 1rem;
+    }
+
+     .greta{
+        background-image: url('../images/GretaLaurel.jpg');
+        height:540px!important;
+        max-height:540px!important;
+        width:100%!important;
+        padding:45% 10% 10%;
+        background-position: center cover no-repeat;
+
     }
 }
 
