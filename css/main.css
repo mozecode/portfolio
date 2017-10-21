@@ -55,7 +55,7 @@ a.navbar-brand, a.nav-item.nav-link.active, a.nav-item.nav-link{
     float:right;
 }
 
-/*pictures for parallax effect*/
+/*pictures for parallax effect- backgrounds*/
 .oculus{
      background-image: url('../images/oculus2.jpg');
      height:100vh;
