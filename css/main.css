@@ -10,7 +10,7 @@ header h1{
     color:#2F1D1A;
     text-shadow: cadetblue 2px 2px 2px;
     font-size: 4em;
-    padding-top: 200px;
+    padding-top: 400px;
 
 }
 
@@ -18,6 +18,11 @@ header h2{
     text-align: center;
     color:#2F1D1A;
     text-shadow: cadetblue 2px 2px 2px;
+}
+
+span.headerText{
+        background-color: cadetblue;
+        opacity:.7;
 }
 
 footer{
@@ -47,8 +52,9 @@ a.navbar-brand, a.nav-item.nav-link.active, a.nav-item.nav-link{
 
 
 /*hide my picture on mobile version*/
-.imglimit{
+img.imglimit{
     display:none;
+
 }
 
 .floatright{
@@ -76,10 +82,17 @@ a.navbar-brand, a.nav-item.nav-link.active, a.nav-item.nav-link{
     height:100vh;
 }
 
-.graffiti{
+.graffiti2{
     background-image: url('../images/graffiti2.jpg');
     width:auto;
     height:700px;
+    padding-bottom: 50px;
+}
+
+.graffiti{
+    background-image: url('../images/graffiti.jpg');
+    width:auto;
+    height:430px;
     padding-bottom: 50px;
 }
 
@@ -131,7 +144,7 @@ div.carousel-inner img{
 .portfolioImg{
     padding:20px;
     width:100%;
-    height:230px;
+    height:350px;
 }
 
 /*Portfolio Overlay*/
@@ -203,35 +216,17 @@ div.carousel-inner img{
 
 /*media queries tablet, desktop*/
 
-@media (min-width:451px) {
-
-    .greta{
-        background-image: url('../images/GretaLaurel.jpg');
-        height:650px!important;
-        width:100%!important;
-        padding:45% 0 0;
-    }
-}
-
-
-@media (min-width: 540px) {
-    header h1{
+@media only screen and(min-width: 540px) {
+    header h1 {
         padding-top:200px;
         padding-left: 170px;
         text-align: left;
-        position:absolute;
     }
 
-    header h2{
+    header h2 {
         text-align: left;
         padding-top:270px;
         padding-left:170px;
-        position:absolute;
-    }
-
-    span.headerText{
-        background-color: cadetblue;
-        opacity:.7;
     }
 
     .imglimit{
@@ -239,12 +234,12 @@ div.carousel-inner img{
         max-height:100vh;
     }
 
-    .story, .tech{
+    .story, .tech {
         padding-left:10%;
         padding-right:10%;
     }
 
-    .portfolioImg{
+    .portfolioImg {
     height:350px;
     }
 
@@ -254,11 +249,11 @@ div.carousel-inner img{
         font-size: 1.5rem;
     }
 
-    .overlayText p{
+    .overlayText p {
         font-size: 1rem;
     }
 
-     .greta{
+    .greta{
         background-image: url('../images/GretaLaurel.jpg');
         height:540px!important;
         max-height:540px!important;
@@ -269,14 +264,9 @@ div.carousel-inner img{
     }
 }
 
-@media (min-width: 830px){
+@media only screen and(min-width: 830px){
 
-    .graffiti{
-        background-image: url('../images/graffiti.jpg');
-        width:auto;
-        height:430px;
-        padding-bottom: 50px;
-    }
+
 
     .portfolioImg{
     height:400px;
