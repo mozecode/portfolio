@@ -216,23 +216,23 @@ div.carousel-inner img{
 
 /*media queries tablet, desktop*/
 
-@media only screen and(min-width: 540px) {
+@media (min-width: 540px) and (max-width: 829px){
     header h1 {
-        padding-top:200px;
+        /*padding-top:200px;*/
         padding-left: 170px;
         text-align: left;
     }
 
     header h2 {
         text-align: left;
-        padding-top:270px;
+       /* padding-top:270px;*/
         padding-left:170px;
     }
 
-    .imglimit{
+   /* .imglimit{
         display:block;
         max-height:100vh;
-    }
+    }*/
 
     .story, .tech {
         padding-left:10%;
@@ -240,7 +240,7 @@ div.carousel-inner img{
     }
 
     .portfolioImg {
-    height:350px;
+    height:450px;
     }
 
     /*Portfolio Overlay*/
@@ -264,11 +264,18 @@ div.carousel-inner img{
     }
 }
 
-@media only screen and(min-width: 830px){
 
+@media (min-width: 830px) and (max-width: 1300px){
 
+    div.overlayText h2 {
+        font-size: 2rem;
+    }
 
-    .portfolioImg{
-    height:400px;
+    div.overlayText p {
+        font-size: 1.5rem;
+    }
+
+    .portfolioImg {
+        height:460px;
     }
 }
