@@ -2,22 +2,25 @@
 body{
    font-family: Reem Kufi;
    background-color: cadetblue;
+   font-size: 1.5em;
  }
 
-header h1{
+h1{
 
     text-align: center;
     color:#2F1D1A;
     text-shadow: cadetblue 2px 2px 2px;
-    font-size: 4em;
-    padding-top: 400px;
+    font-size: 3.5em;
+    padding-top: 65%;
 
 }
 
-header h2{
+h2{
     text-align: center;
     color:#2F1D1A;
     text-shadow: cadetblue 2px 2px 2px;
+    font-size: 2.25em;
+    padding-top: 10px;
 }
 
 span.headerText{
@@ -43,6 +46,7 @@ p{
 /*navbar- override base styles from bootstrap*/
 a.navbar-brand, a.nav-item.nav-link.active, a.nav-item.nav-link{
     color:cadetblue!important;
+    font-size: 2.25rem;
 }
 
 .bg-dark{
@@ -73,7 +77,7 @@ img.imglimit{
 }
 
 .greta{
-    background-image: url('../images/GretaLaurelSmall.jpg');
+    background-image: url('../images/GretaLaurel.jpg');
     height:675px;
 }
 
@@ -133,6 +137,7 @@ div.carousel-inner img{
     text-align: center;
     padding-top: 70px; /*padding needed due to sticky nav*/
     text-decoration-line: underline;
+    font-size: 2.25em;
 }
 
 /*Portfolio styles*/
@@ -144,7 +149,7 @@ div.carousel-inner img{
 .portfolioImg{
     padding:20px;
     width:100%;
-    height:350px;
+    height:400px;
 }
 
 /*Portfolio Overlay*/
@@ -178,26 +183,29 @@ div.carousel-inner img{
     width:90%;
 }
 
-.overlayText h2 {
-    font-size: 16px;
+div.overlayText h2 {
+    font-size: 2rem;
 }
 
 .overlayText p {
-    font-size: 12px;
+    font-size: 1.5rem ;
 }
 
 /*Technologies*/
 .tech{
     height:auto;
     background-color: white;
+    padding-left:10%;
+    padding-right:10%;
 }
 
 .techicon, .social {
     width:auto;
-    height:150px;
+    height:250px;
     padding-top:30px;
     padding-bottom: 30px;
 }
+
 
 /*Contact*/
 
@@ -216,23 +224,24 @@ div.carousel-inner img{
 
 /*media queries tablet, desktop*/
 
-@media (min-width: 540px) and (max-width: 829px){
-    header h1 {
-        /*padding-top:200px;*/
+/*
+@media (min-width: 540px) {
+    body {
+        background-color: red;
+    }
+
+    h1 {
+        padding-top: 250px;
         padding-left: 170px;
         text-align: left;
+        font-size: 3em
     }
 
-    header h2 {
+    header.parallax.oculus h2 {
         text-align: left;
-       /* padding-top:270px;*/
         padding-left:170px;
+        font-size: 1.5em;
     }
-
-   /* .imglimit{
-        display:block;
-        max-height:100vh;
-    }*/
 
     .story, .tech {
         padding-left:10%;
@@ -243,7 +252,7 @@ div.carousel-inner img{
     height:450px;
     }
 
-    /*Portfolio Overlay*/
+    Portfolio Overlay
 
     .overlayText h2 {
         font-size: 1.5rem;
@@ -263,9 +272,8 @@ div.carousel-inner img{
 
     }
 }
-
-
-@media (min-width: 830px) and (max-width: 1300px){
+*/
+/*@media (min-width: 830px) {
 
     div.overlayText h2 {
         font-size: 2rem;
@@ -278,4 +286,5 @@ div.carousel-inner img{
     .portfolioImg {
         height:460px;
     }
-}
+}*/
+
