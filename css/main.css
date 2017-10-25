@@ -43,6 +43,10 @@ p{
     text-align: center;
 }
 
+h2.padding{
+    padding: 20% ;
+}
+
 /*navbar- override base styles from bootstrap*/
 a.navbar-brand, a.nav-item.nav-link.active, a.nav-item.nav-link{
     color:cadetblue!important;
@@ -135,7 +139,7 @@ div.carousel-inner img{
 .storyH2{
     color:#2F1D1A;
     text-align: center;
-    padding-top: 70px; /*padding needed due to sticky nav*/
+    padding-top: 85px; /*padding needed due to sticky nav*/
     text-decoration-line: underline;
     font-size: 2.25em;
 }
@@ -143,7 +147,7 @@ div.carousel-inner img{
 /*Portfolio styles*/
 
 .portfolio {
-    padding-top:70px;
+    padding-top:85px;
 }
 
 .portfolioImg{
@@ -197,6 +201,7 @@ div.overlayText h2 {
     background-color: white;
     padding-left:10%;
     padding-right:10%;
+    padding-top: 80px;
 }
 
 .techicon, .social {
@@ -215,44 +220,55 @@ div.overlayText h2 {
 }
 
 .contact h2 {
-    padding-top: 70px;
+    padding-top: 80px;
 }
 
 .contact {
     padding-bottom: 50px;
 }
 
+
 /*media queries tablet, desktop*/
 
-/*
-@media (min-width: 540px) {
-    body {
-        background-color: red;
+
+@media only screen and (min-device-width:450px) {
+
+    html{
+        min-width: 100%;
+        background-size: contain;
     }
 
     h1 {
-        padding-top: 250px;
-        padding-left: 170px;
-        text-align: left;
-        font-size: 3em
+        padding-top: 220px;
     }
 
-    header.parallax.oculus h2 {
-        text-align: left;
-        padding-left:170px;
-        font-size: 1.5em;
+    /*overwriting navbar styles*/
+    a.navbar-brand {
+        font-size: 2rem;
     }
 
-    .story, .tech {
-        padding-left:10%;
-        padding-right:10%;
+    a.nav-item.nav-link{
+        font-size: 1.75rem;
     }
 
-    .portfolioImg {
-    height:450px;
+    /*about styles*/
+    h2.storyH2 {
+        font-size: 2rem;
     }
 
-    Portfolio Overlay
+    p {
+        font-size: 1em;
+    }
+
+    img.techicon {
+        height:200px;
+    }
+
+    img.portfolioImg {
+        height:450px;
+    }
+
+   /* Portfolio Overlay*/
 
     .overlayText h2 {
         font-size: 1.5rem;
@@ -262,29 +278,84 @@ div.overlayText h2 {
         font-size: 1rem;
     }
 
-    .greta{
-        background-image: url('../images/GretaLaurel.jpg');
-        height:540px!important;
-        max-height:540px!important;
-        width:100%!important;
-        padding:45% 10% 10%;
-        background-position: center cover no-repeat;
+     /*contact header*/
+    h2.col-md-12.center{
+        font-size: 2rem;
 
     }
 }
-*/
-/*@media (min-width: 830px) {
 
-    div.overlayText h2 {
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+    html {
+        min-width: 100%;
+        background-size: contain;
+    }
+
+    h1 {
+        padding-top: 170px;
+        font-size: 2.5em;
+    }
+
+/*overwriting navbar styles*/
+    nav {
+        padding:0;
+    }
+    a.navbar-brand {
         font-size: 2rem;
     }
 
-    div.overlayText p {
+    a.nav-item.nav-link{
+        font-size: 1.75rem;
+    }
+
+    /*about styles*/
+    .story {
+        padding-bottom: 100px;
+    }
+
+    h2.storyH2 {
+        font-size: 2rem;
+        padding-top: 170px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    img.techicon {
+        height:200px;
+    }
+
+    .portfolio {
+        padding-top: 170px;
+        padding-bottom: 100px;
+    }
+
+    img.portfolioImg {
+        height:350px;
+    }
+
+   /* Portfolio Overlay*/
+
+    .overlayText h2 {
         font-size: 1.5rem;
     }
 
-    .portfolioImg {
-        height:460px;
+    .overlayText p {
+        font-size: 1rem;
     }
-}*/
 
+     /*contact header*/
+
+    .contact {
+         padding-bottom: 100px;
+    }
+    .contact h2 {
+        padding-top: 170px;
+    }
+
+    h2.col-md-12.center{
+        font-size: 2rem;
+
+    }
+}
