@@ -2,22 +2,25 @@
 body{
    font-family: Reem Kufi;
    background-color: cadetblue;
+   font-size: 1.5em;
  }
 
-header h1{
+h1{
 
     text-align: center;
     color:#2F1D1A;
     text-shadow: cadetblue 2px 2px 2px;
-    font-size: 4em;
-    padding-top: 400px;
+    font-size: 3.5em;
+    padding-top: 65%;
 
 }
 
-header h2{
+h2{
     text-align: center;
     color:#2F1D1A;
     text-shadow: cadetblue 2px 2px 2px;
+    font-size: 2.25em;
+    padding-top: 10px;
 }
 
 span.headerText{
@@ -40,9 +43,14 @@ p{
     text-align: center;
 }
 
+h2.padding{
+    padding: 20% ;
+}
+
 /*navbar- override base styles from bootstrap*/
 a.navbar-brand, a.nav-item.nav-link.active, a.nav-item.nav-link{
     color:cadetblue!important;
+    font-size: 2.25rem;
 }
 
 .bg-dark{
@@ -73,7 +81,7 @@ img.imglimit{
 }
 
 .greta{
-    background-image: url('../images/GretaLaurelSmall.jpg');
+    background-image: url('../images/GretaLaurel.jpg');
     height:675px;
 }
 
@@ -131,20 +139,21 @@ div.carousel-inner img{
 .storyH2{
     color:#2F1D1A;
     text-align: center;
-    padding-top: 70px; /*padding needed due to sticky nav*/
+    padding-top: 85px; /*padding needed due to sticky nav*/
     text-decoration-line: underline;
+    font-size: 2.25em;
 }
 
 /*Portfolio styles*/
 
 .portfolio {
-    padding-top:70px;
+    padding-top:85px;
 }
 
 .portfolioImg{
     padding:20px;
     width:100%;
-    height:350px;
+    height:400px;
 }
 
 /*Portfolio Overlay*/
@@ -178,26 +187,30 @@ div.carousel-inner img{
     width:90%;
 }
 
-.overlayText h2 {
-    font-size: 16px;
+div.overlayText h2 {
+    font-size: 2rem;
 }
 
 .overlayText p {
-    font-size: 12px;
+    font-size: 1.5rem ;
 }
 
 /*Technologies*/
 .tech{
     height:auto;
     background-color: white;
+    padding-left:10%;
+    padding-right:10%;
+    padding-top: 80px;
 }
 
 .techicon, .social {
     width:auto;
-    height:150px;
+    height:250px;
     padding-top:30px;
     padding-bottom: 30px;
 }
+
 
 /*Contact*/
 
@@ -207,43 +220,55 @@ div.carousel-inner img{
 }
 
 .contact h2 {
-    padding-top: 70px;
+    padding-top: 80px;
 }
 
 .contact {
     padding-bottom: 50px;
 }
 
+
 /*media queries tablet, desktop*/
 
-@media (min-width: 540px) and (max-width: 829px){
-    header h1 {
-        /*padding-top:200px;*/
-        padding-left: 170px;
-        text-align: left;
+
+@media only screen and (min-device-width:450px) {
+
+    html{
+        min-width: 100%;
+        background-size: contain;
     }
 
-    header h2 {
-        text-align: left;
-       /* padding-top:270px;*/
-        padding-left:170px;
+    h1 {
+        padding-top: 220px;
     }
 
-   /* .imglimit{
-        display:block;
-        max-height:100vh;
-    }*/
-
-    .story, .tech {
-        padding-left:10%;
-        padding-right:10%;
+    /*overwriting navbar styles*/
+    a.navbar-brand {
+        font-size: 2rem;
     }
 
-    .portfolioImg {
-    height:450px;
+    a.nav-item.nav-link{
+        font-size: 1.75rem;
     }
 
-    /*Portfolio Overlay*/
+    /*about styles*/
+    h2.storyH2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    img.techicon {
+        height:200px;
+    }
+
+    img.portfolioImg {
+        height:450px;
+    }
+
+   /* Portfolio Overlay*/
 
     .overlayText h2 {
         font-size: 1.5rem;
@@ -253,29 +278,84 @@ div.carousel-inner img{
         font-size: 1rem;
     }
 
-    .greta{
-        background-image: url('../images/GretaLaurel.jpg');
-        height:540px!important;
-        max-height:540px!important;
-        width:100%!important;
-        padding:45% 10% 10%;
-        background-position: center cover no-repeat;
+     /*contact header*/
+    h2.col-md-12.center{
+        font-size: 2rem;
 
     }
 }
 
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+    html {
+        min-width: 100%;
+        background-size: contain;
+    }
 
-@media (min-width: 830px) and (max-width: 1300px){
+    h1 {
+        padding-top: 170px;
+        font-size: 2.5em;
+    }
 
-    div.overlayText h2 {
+/*overwriting navbar styles*/
+    nav {
+        padding:0;
+    }
+    a.navbar-brand {
         font-size: 2rem;
     }
 
-    div.overlayText p {
+    a.nav-item.nav-link{
+        font-size: 1.75rem;
+    }
+
+    /*about styles*/
+    .story {
+        padding-bottom: 100px;
+    }
+
+    h2.storyH2 {
+        font-size: 2rem;
+        padding-top: 170px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    img.techicon {
+        height:200px;
+    }
+
+    .portfolio {
+        padding-top: 170px;
+        padding-bottom: 100px;
+    }
+
+    img.portfolioImg {
+        height:350px;
+    }
+
+   /* Portfolio Overlay*/
+
+    .overlayText h2 {
         font-size: 1.5rem;
     }
 
-    .portfolioImg {
-        height:460px;
+    .overlayText p {
+        font-size: 1rem;
+    }
+
+     /*contact header*/
+
+    .contact {
+         padding-bottom: 100px;
+    }
+    .contact h2 {
+        padding-top: 170px;
+    }
+
+    h2.col-md-12.center{
+        font-size: 2rem;
+
     }
 }
