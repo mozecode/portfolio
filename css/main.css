@@ -48,7 +48,7 @@ h2.padding{
 }
 
 /*navbar- override base styles from bootstrap*/
-a.navbar-brand, a.nav-item.nav-link.active, a.nav-item.nav-link{
+a.nav-item.nav-link.active, a.nav-item.nav-link{
     color:cadetblue!important;
     font-size: 2.25rem;
 }
@@ -300,12 +300,10 @@ div.overlayText h2 {
     nav {
         padding:0;
     }
-    a.navbar-brand {
-        font-size: 2rem;
-    }
 
-    a.nav-item.nav-link{
-        font-size: 1.75rem;
+    a.nav-item.nav-link.center{
+        font-size: 1.5rem;
+        margin-left:1.75rem;
     }
 
     /*about styles*/
@@ -357,5 +355,13 @@ div.overlayText h2 {
     h2.col-md-12.center{
         font-size: 2rem;
 
+    }
+}
+
+@media only screen and (min-device-width:1025px) and (max-device-width:1300px) {
+
+    a.nav-item.nav-link.center{
+        font-size: 1.5rem;
+        margin-left:3rem;
     }
 }
