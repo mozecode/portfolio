@@ -103,6 +103,12 @@ img.imglimit{
     height:430px;
     padding-bottom: 50px;
 }
+.speaker{
+    background-image: url('../images/graffiti.jpg');
+    width:auto;
+    height:430px;
+    padding-bottom: 50px;
+}
 
 /*Parallax effect*/
 .parallax{
