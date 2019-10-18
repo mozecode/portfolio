@@ -256,6 +256,9 @@ div.overlayText h2 {
        padding-right:0px;
    }
 
+   .long{
+        display:none;
+   }
    .teacher {
        background-image: url('../images/GroupAtForum.jpg');
        height: 100vh;
