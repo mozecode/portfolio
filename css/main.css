@@ -248,13 +248,10 @@ div.overlayText h2 {
    }
 
    p{
-       font-size:2em;
+       font-size:1.75em;
    }
 
-   .container-fluid{
-       padding-left:0px;
-       padding-right:0px;
-   }
+
    /*shorten text under About Me for mobile version*/
    .long{
         display:none;
@@ -290,6 +287,25 @@ div.overlayText h2 {
 
    .speaker {
       display:none;
+   }
+
+   /*technologies*/
+   .tech {
+       margin-top:10px;
+       height: auto;
+       background-color: white;
+       padding-left: 0%;
+       padding-right: 0%;
+       padding-top: 80px;
+   }
+
+   .techicon,
+   .social {
+       width: auto;
+       height: 200px;
+       padding-top: 30px;
+       padding-bottom: 30px;
+       margin:auto;
    }
 
    /*Portfolio Overlay for mobile version*/
