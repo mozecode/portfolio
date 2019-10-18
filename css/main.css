@@ -23,6 +23,7 @@ h2{
     padding-top: 10px;
 }
 
+
 span.headerText{
         background-color: cadetblue;
         opacity:.7;
@@ -256,6 +257,7 @@ div.overlayText h2 {
    .long{
         display:none;
    }
+
    /*Modified parallax styles for mobile*/
    .teacher {
        background-image: url('../images/GroupAtForum.jpg');
@@ -328,7 +330,7 @@ div.overlayText h2 {
        bottom: 0;
        height: 100%;
        width: 100%;
-       opacity: .5;
+       opacity: .6;
        transition: .6s ease;
        background-color: #2F1D1A;
    }
@@ -342,12 +344,12 @@ div.overlayText h2 {
    }
 
    div.overlayText h2 {
-       font-size: 2.5rem;
+       font-size: 2.2rem;
        opacity:1;
    }
 
    .overlayText p {
-       font-size: 1.1rem;
+       font-size: .9rem;
    }
 
 }
@@ -362,7 +364,10 @@ div.overlayText h2 {
     h1 {
         padding-top: 220px;
     }
-
+    /*cut out short version elements in other views*/
+    .short {
+        display: none;
+    }
     /*overwriting navbar styles*/
     a.navbar-brand {
         font-size: 2rem;
@@ -417,6 +422,10 @@ div.overlayText h2 {
         font-size: 2.5em;
     }
 
+    /*cut out short version elements in other views*/
+    .short {
+        display: none;
+    }
 /*overwriting navbar styles*/
     nav {
         padding:0;
@@ -484,5 +493,9 @@ div.overlayText h2 {
     a.nav-item.nav-link.center{
         font-size: 1.5rem;
         margin-left:3rem;
+    }
+    /*cut out short version elements in other views*/
+    .short {
+        display: none;
     }
 }
