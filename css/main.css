@@ -241,15 +241,20 @@ div.overlayText h2 {
        min-width:100%;
        background-size: contain;
    }
-
+   .navbar{
+       display:none;
+   }
    html,
    body {
        margin: 0;
        padding: 0;
    }
 
+   h1{
+       padding-top:50%;
+   }
    p{
-       font-size:1.75em;
+       font-size:1em;
    }
 
 
@@ -350,6 +355,10 @@ div.overlayText h2 {
 
    .overlayText p {
        font-size: .9rem;
+   }
+
+   h2.storyH2 {
+       font-size: 2rem;
    }
 
 }
